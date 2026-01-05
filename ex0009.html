@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saoco Papi .com</title>
+
+  <style>
+    body {
+      background-color: chocolate;
+      font: normal 40pt Arial;
+    }
+
+    h1 {
+      color: rgb(5, 12, 12);
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: burlywood;
+      cursor: pointer;
+        transition: all 0.3s ease;
+        position: fixed;
+        bottom: 30px;
+        left :  50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    button:hover {
+      background-color: peru;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Botón -->
+  <button id="botonAnimado">¡Púlsame!</button>
+
+  <script>
+    // nombre
+    var nombre = window.prompt("Antes dame tu nombre :)");
+
+    // alertas y mensajes
+    window.alert(`Es un placer conocerte ${nombre.toUpperCase()}!`);
+    document.write(`<p>${nombre} eres un cara de guanábana 😄</p>`);
+    document.write(`<p>Pero te quiero mucho, ${nombre} ❤️</p>`);
+
+    // Obtener el botón 
+    const boton = document.getElementById("botonAnimado");
+
+    // Evento al hacer clic
+    boton.addEventListener("click", function() {
+      boton.style.backgroundColor = "gray"; 
+      window.open("https://i.pinimg.com/736x/73/7d/e6/737de63b49d82e02bb59a5b7d82499b6.jpg", "_blank");
+    });
+  </script>
+</body>
+</html>
